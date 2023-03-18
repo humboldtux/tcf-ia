@@ -1,5 +1,5 @@
 import { auth } from "@/firebase/clientApp";
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Spacer } from "@chakra-ui/react";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import RightContent from "./RightContent/RightContent";
@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
           display={{ base: "none", md: "unset" }}
         />
       </Flex>
+      <Spacer />
       <RightContent user={user} />
     </Flex>
   );
